@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    height: 80px;
+    z-index: 1000;
+}
+
+.logo  {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  width: 150px;
+  border-radius: 40px;
+  margin-left: 700px;
+  border: none;
+  outline: none;
+}
+
+.nav-links {
+    margin-right: 90px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(246, 241, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.home-page {
+   background-image: url(/asset/home-page.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;      
+   justify-content: center;  
+}
+
+
+
+.badge {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.home-content h1 span {
+  color: #d3c01a;
+}
+
+.home-content p {
+  font-size: 18px;
+  color: #f9f6f3;
+  font-size: 20px;
+  font-weight: b;
+  line-height: 1.5;
+  opacity: 5px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+  padding: 10px 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+}
+
+.btn-secondary {
+  background: white;
+  color: black;
+  padding: 10px 18px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.5;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
