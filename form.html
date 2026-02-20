@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account | Lost & Found</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <div class="form-container">
+
+    <form id="signupForm" class="signup-form">
+      <h1>Create Account</h1>
+
+      <!-- Personal Info -->
+      <div class="input-box">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Full Name" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-id-card"></i>
+        <input type="text" placeholder="College BT ID " required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-building"></i>
+        <select required>
+          <option value="">Select Department</option>
+          <option>CSE</option>
+          <option>IT</option>
+          <option>ECE</option>
+          <option>MECH</option>
+          <option>CIVIL</option>
+        </select>
+      </div>
+
+      <!-- Contact -->
+      <div class="input-box">
+        <i class="fa fa-envelope"></i>
+        <input type="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-phone"></i>
+        <input type="tel" placeholder="Mobile Number" required>
+      </div>
+
+      <!-- Location -->
+      <div class="input-box">
+        <i class="fa fa-location-dot"></i>
+        <input type="text" placeholder="Enter Address" required>
+      </div>
+
+      <!-- Password -->
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Create Password" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" placeholder="Confirm Password" required>
+      </div>
+
+      <!-- Profile -->
+      <div class="upload-box">
+        <label>Upload Profile Photo</label>
+        <input type="file">
+      </div>
+
+      <!--ID Card -->
+      <div class="upload-box">
+        <label>Upload College ID </label>
+        <input type="file">
+      </div>
+
+      <!-- Terms -->
+      <div class="terms">
+        <input type="checkbox" required>
+        <span>I agree to Terms & Conditions</span>
+      </div>
+
+      <button type="submit">Create Account</button>
+
+      <p class="switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+
+    </form>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

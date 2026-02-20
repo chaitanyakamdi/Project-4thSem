@@ -1,0 +1,74 @@
+.form-container {
+  min-height: 100vh;
+  background-image: url("/asset/home-page.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+
+.signup-form {
+  background: white;
+  padding: 30px;
+  width: 380px;
+  border-radius: 10px;
+}
+
+.signup-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.input-box i {
+  margin-right: 10px;
+  color: #555;
+}
+
+.input-box input,
+.input-box select {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.upload-box {
+  margin-bottom: 15px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.switch a {
+  text-decoration: none;
+  color: #2563eb;
+}
