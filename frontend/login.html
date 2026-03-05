@@ -1,0 +1,84 @@
+<form action="/login" method="POST" class="login-form">
+
+  <div class="input-box">
+    <input type="email" name="email" placeholder="Email" required>
+  </div>
+
+  <div class="input-box">
+    <input type="password" name="password" placeholder="Password" required>
+  </div>
+
+  <button type="submit">Login</button>
+
+</form>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jd college </title>
+    <link rel="stylesheet" href="login.css"> </link>
+</head>
+<body>
+    <header> 
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="a">Home</a></li>
+                <li><a href="#" class="a">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="form">
+            <img src="/asset/JDlogo.png" class="logo">
+            <div class="heading">
+                <h1> LOGIN FORM </h1>
+            </div>
+
+            <form id="loginForm">
+                <div class="info">
+                    <label for="email"> Enter your Email </label>
+                    <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="info">
+                    <label for="password"> Enter your Password </label>
+                    <input id="password" name="password" type="password" placeholder="Enter your Password" required>
+                </div>
+                <button class="button" type="submit">LOGIN NOW</button>
+            </form>
+            <p class="switch"> New user? <a href="form.html"> Create account</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                try {
+                    const res = await fetch('/api/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ email, password })
+                    });
+                    const data = await res.json();
+                    if (res.ok && data.success) {
+                        window.location.href = 'index.html';
+                    } else {
+                        alert(data.message || 'Login failed. Please check your credentials.');
+                    }
+                } catch (err) {
+                    alert('Error logging in. Please try again.');
+                }
+            });
+        </script>
+    </footer>
+
+</body>
+</html> -->
