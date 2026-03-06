@@ -6,25 +6,31 @@
     <title>LOST & FOUND</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-      <nav class="navbar">
-  <div class="logo">
-    <img src="asset/lost&foundlogo.png" alt="logo">
-  </div>
+    <nav class="navbar">
+        <div class="logo">
+        <img src="/frontend/asset/lost&foundlogo.png" alt="logo">
+        <!-- <h3 class="bungee-regular">SARS</h3> -->
+        </div>
 
-  <div class="nav-links">
+        <div>
+          <input type="text"  placeholder="Search items" class="search-box-input" >
+        </div> 
 
-    <input type="text" placeholder="Search items" class="search-box-input">
 
-    <a href="#">HOME</a>
-    <a href="#">LOST</a>
-    <a href="#">FOUND</a>
-    <a href="#">CONTACT</a>
+            <div class="nav-links">
+             <a href="index.html"> HOME </a>
+             <a href="#"> LOST </a>
+             <a href="#"> FOUND </a>
+             <a href="contact.html"> CONTACT </a>
 
-    <!-- LOGIN BUTTON -->
+             <!-- LOGIN BUTTON -->
     <a href="login.html" id="loginBtn">LOG IN</a>
 
     <!-- PROFILE ICON -->
@@ -39,25 +45,9 @@
         <a href="/logout" class="logout">Logout</a>
       </div>
     </div>
-
-  </div>
-</nav>
-    <!-- <nav class="navbar">
-        <div class="logo">
-        <img src="asset/lost&foundlogo.png" alt="logo">
-        </div> 
-
-
-            <div class="nav-links">
-             <input type="text"  placeholder="Search items" class="search-box-input" > 
-             <a href="#"> HOME </a>
-             <a href="#"> LOST </a>
-             <a href="#"> FOUND </a>
-             <a href="#"> CONTACT </a>
-             <a href="login.html"> LOG IN  </a>
             </div>
 
-    </nav> -->
+    </nav> 
     </header>
     <main>
         <section class="home-page">
@@ -77,8 +67,8 @@ Reconnecting people with their belongings</span>
     </p>
 
     <div class="hero-buttons">
-      <button class="btn-primary" onclick="location.href='/report/lost'">Report Lost Item</button>
-      <button class="btn-secondary" onclick="location.href='/report/found'">Report Found Item</button>
+      <button class="btn-primary" onclick="location.href='/report/lost'">🔍 Report Lost Item</button>
+      <button class="btn-secondary" onclick="location.href='/report/found'">📍 Report Found Item</button>
     </div>
 
 </div>
@@ -98,9 +88,9 @@ Reconnecting people with their belongings</span>
     <div class="search-filter">
       <input type="text" placeholder="Search items..." />
       <div class="filters">
-        <button>All</button>
-        <button>Lost</button>
-        <button>Found</button>
+        <button class="">All</button>
+        <button class="lost-items">Lost</button>
+        <button class="found-items">Found</button>
       </div>
     </div>
   </div> 
@@ -117,35 +107,94 @@ Reconnecting people with their belongings</span>
 
     <!-- Card 2 -->
     <div class="item-card">
-      
+      <img src="/asset/watch.webp" alt="Lost Item">
+      <div class="card-content">
+        <h3>Black Sonata Watch </h3>
+        <p class="item-type lost">Lost Item</p>
+        <p class="item-desc">This is the watch i found in the library. of admin building at time 11 pm in  above the bench </p>
+        <p class="item-location"> <i class="fa-solid fa-location-dot"></i> Library, Admin Building</p>
+        <div class="date-time">
+          <span> <i class="fa-solid fa-calendar"></i>12 Feb 2026</span>
+          <span> <i class="fa-solid fa-clock"></i> 10:30 AM</span>
+        </div>
+
+        <button class="contact-btn"> Contact <i class="fa-solid fa-envelope"></i></button>
+      </div>
     </div>
 
     <!-- Card 3 -->
     <div class="item-card">
-      
+      <img src="/asset/watch.webp" alt="Lost Item">
+      <div class="card-content">
+        <h3>Black Sonata Watch </h3>
+        <p class="item-type lost">Lost Item</p>
+        <p class="item-desc">This is the watch i found in the library. of admin building at time 11 pm in  above the bench </p>
+        <p class="item-location"> <i class="fa-solid fa-location-dot"></i> Library, Admin Building</p>
+        <div class="date-time">
+          <span> <i class="fa-solid fa-calendar"></i>12 Feb 2026</span>
+          <span> <i class="fa-solid fa-clock"></i> 10:30 AM</span>
+        </div>
+
+        <button class="contact-btn"> Contact <i class="fa-solid fa-envelope"></i></button>
+      </div>
     </div>
 
     <!-- Card 4 -->
      <div class="item-card">
-      
+      <img src="/frontend/asset/watch.webp" alt="Lost Item">
+      <div class="card-content">
+        <h3>Black Sonata Watch </h3>
+        <p class="item-type lost">Lost Item</p>
+        <p class="item-desc">This is the watch i found in the library. of admin building at time 11 pm in  above the bench </p>
+        <p class="item-location"> <i class="fa-solid fa-location-dot"></i> Library, Admin Building</p>
+        <div class="date-time">
+          <span> <i class="fa-solid fa-calendar"></i>12 Feb 2026</span>
+          <span> <i class="fa-solid fa-clock"></i> 10:30 AM</span>
+        </div>
+
+        <button class="contact-btn"> Contact <i class="fa-solid fa-envelope"></i></button>
+      </div>
     </div>
 
     <!-- Card 5 -->
      <div class="item-card">
-      
+      <img src="/asset/watch.webp" alt="Lost Item">
+      <div class="card-content">
+        <h3>Black Sonata Watch </h3>
+        <p class="item-type lost">Lost Item</p>
+        <p class="item-desc">This is the watch i found in the library. of admin building at time 11 pm in  above the bench </p>
+        <p class="item-location"> <i class="fa-solid fa-location-dot"></i> Library, Admin Building</p>
+        <div class="date-time">
+          <span> <i class="fa-solid fa-calendar"></i>12 Feb 2026</span>
+          <span> <i class="fa-solid fa-clock"></i> 10:30 AM</span>
+        </div>
+
+        <button class="contact-btn"> Contact <i class="fa-solid fa-envelope"></i></button>
+      </div>
     </div>
 
     <!-- Card 6 -->
      <div class="item-card">
-      
+      <img src="/asset/watch.webp" alt="Lost Item">
+      <div class="card-content">
+        <h3>Black Sonata Watch </h3>
+        <p class="item-type found">Found Item</p>
+        <p class="item-desc">This is the watch i found in the library. of admin building at time 11 pm in  above the bench </p>
+        <p class="item-location"> <i class="fa-solid fa-location-dot"></i> Library, Admin Building</p>
+        <div class="date-time">
+          <span> <i class="fa-solid fa-calendar"></i>12 Feb 2026</span>
+          <span> <i class="fa-solid fa-clock"></i> 10:30 AM</span>
+        </div>
+
+        <button class="contact-btn"> Contact <i class="fa-solid fa-envelope"></i></button>
+      </div>
     </div>
 
     
   </div>  
   <div class="view-all-container">
-    <button class="view-all-btn">View All</button>
+    <button class="view-all-btn">View All  <i class="fa-solid fa-arrow-right"></i></button>
   </div>
-
   </div>
 </section>
 
@@ -290,22 +339,22 @@ Reconnecting people with their belongings</span>
             <li><a href="#">Home</a></li>
             <li><a href="#">Lost Items</a></li>
             <li><a href="#">Found Items</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
         </div>
         <div class="support">
         <h4>Support</h4>
         <ul>
         <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Report an Issue</a></li>
+            <li><a href="contact.html">Report an Issue</a></li>
         </ul>
         </div>
 
         <div class="Contact">
             <h4>Contact </h4>
-            <p><i class="fas fa-map-marker-alt"></i> Cse Dep Jdcoem Nagpur </p>
+            <p href=""><i class="fas fa-map-marker-alt"></i> Cse Dep Jdcoem Nagpur </p>
             <p><i class="fas fa-phone"></i> (123) 456-7890</p>
             <p><i class="fas fa-envelope"></i> support@lostandfound.com</p>
            </div>
