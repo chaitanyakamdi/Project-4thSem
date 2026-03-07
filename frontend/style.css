@@ -288,14 +288,14 @@
 .search-filter input {
   padding: 10px 15px;
   width: 190px;
-  border: none;
+  border: 2px solid gray;
   border-radius: 12px; 
-  background: #deab90;
+  background: rgba(0, 0, 0, 0.3);
   /* backdrop-filter: blur(8px); */
   /* -webkit-backdrop-filter: blur(8px); */
   
   outline: none;
-  color: #343a40;
+  color: #fff;
   font-size: 14px;
   transition: all 0.3s ease;
   margin-left: 40px;
@@ -313,16 +313,14 @@
 
 
 .filters button {
-  background: rgb(240, 238, 235);
-  color: rgb(10, 3, 3);
+  background: rgba(0, 0, 0,0.2);
+  color: #000;
   padding: 8px 16px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background: #e6b8a2;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: white;
   font-size: 14px;
   transition: all 0.3s ease;
   gap: 10px;
@@ -340,7 +338,7 @@
 
 .lost-found-section {
   padding: 60px 80px;
-   background-image: radial-gradient(#edc4b3, white);
+   background-image: radial-gradient(#F9F6F0, white);
 }
 
 
@@ -467,7 +465,7 @@
 .view-all-container button {
   padding: 10px 20px;
   border: none;
-  background: #e6b8a2;
+  background: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-size: 16px;
   border-radius: 6px;
@@ -522,7 +520,7 @@
 .step-number {
     width: 2.25rem;
     height: 2.25rem;
-    background: #deab90;
+    background: rgba(0, 0, 0, 0.3);
     color: white;
     font-weight: 700;
     border-radius: 9999px;
@@ -541,8 +539,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #edc4b3a0;
-    color: #d69f7e;
+    background: rgba(0, 0, 0, 0.3)  ;
+    color: #8b3a00;
 }
 
 .step-title {
@@ -560,8 +558,9 @@
 
 /* footer Section  */
 .footer {
-  background: linear-gradient(135deg, #2C2520, #2C2520, #8a5a44);
-  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #691e06, #8b3a00, #691e06);
+  /* background: #e3631480; */
+  color: #F5F0E6;
   padding: 40px 80px;
 }
 
@@ -583,7 +582,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer-heading p {
-  color: #f3f3f3;
+  color: #d7d2c9;
   font-size: 18px;
   margin-bottom: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -690,9 +689,9 @@
   .footer-bottom {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #374151;
+    border-top: 1px solid #ff4800;
     text-align: center;
-    color: #2b2b2b;
+    color: #fff;
     font-size: 0.875rem;
 }
 
