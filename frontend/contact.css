@@ -51,14 +51,14 @@ h1, h2, h3, h4 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 .contact-detail { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
 .contact-detail-icon {
   width: 44px; height: 44px; border-radius: 50%;
-  background: #8b3a009a; display: flex; align-items: center;
+  background: gray; display: flex; align-items: center;
   justify-content: center; flex-shrink: 0; color: #8b3a00; font-size: 1.3rem;
 }
 .contact-detail-label { color: #212529; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.15rem; }
 .contact-detail-text { font-size: 1rem; font-weight: 500; }
 
 .contact-form-card {
-  background: #ac6837c1; border-radius: 0.75rem; padding: 2.5rem;
+  background: rgba(155, 155, 155, 0.672); border-radius: 0.75rem; padding: 2.5rem;
   box-shadow: 0 8px 40px -12px hsl(30 10% 12% / 0.08);
   border: 1px solid hsl(35, 15%, 85%);
 }
@@ -81,8 +81,8 @@ h1, h2, h3, h4 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 @media (max-width: 480px) { .form-row { grid-template-columns: 1fr; } }
 
 .submit-btn {
-  width: 100%; padding: 0.85rem; background: #9f4e14;
-  color: hsl(0, 0%, 7%); border: none; border-radius: 0.6rem;
+  width: 100%; padding: 0.85rem; background: rgba(128, 128, 128, 0.746);
+  color: brown; border: none; border-radius: 0.6rem;
   font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 600;
   cursor: pointer; transition: opacity 0.2s, transform 0.15s; margin-top: 0.5rem;
 }
