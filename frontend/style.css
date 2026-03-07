@@ -701,3 +701,127 @@ hr {
     border-top: 1px solid #e5e7eb;
     margin: 3rem 0;
 }
+
+
+
+/* ChatBot  */
+
+
+/* Floating Button */
+.chat-toggle{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:rgb(207, 207, 207);
+    color:brown;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    cursor:pointer;
+    box-shadow:0 0 20px rgba(255, 255, 255, 0.6);
+    z-index:1000;
+}
+
+/* Chatbox */
+.chat-container{
+    position:fixed;
+    bottom:90px;
+    right:20px;
+    width:340px;
+    height:450px;
+    background: rgba(128, 128, 128, 0.217);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 25px rgba(255, 255, 255, 0.5);
+    display:none;
+    flex-direction:column;
+    animation:fadeIn 0.3s ease-in-out;
+    z-index:1000;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.chat-header{
+    background:#7d7d7d;
+    color:white;
+    padding:12px;
+    font-weight:bold;
+    text-align:center;
+    font-size: large;
+}
+
+.chat-box{
+    flex:1;
+    overflow-y:auto;
+    padding:10px;
+    font-size:14px;
+}
+
+.message{
+    margin:8px 0;
+    padding:8px 12px;
+    border-radius:15px;
+    max-width:80%;
+    color: #fff;
+}
+
+.user{
+    background: rgba(165, 42, 42, 0.332);
+    color:black;
+    margin-left:auto;
+}
+
+.bot{
+    background:rgba(255,255,255,0.2);
+}
+
+.quick-buttons{
+    padding:8px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+.quick-buttons button{
+    font-size:12px;
+    padding:5px 8px;
+    border:none;
+    border-radius:10px;
+    background: rgba(165, 42, 42, 0.376);
+    cursor:pointer;
+    color: white;
+}
+
+.chat-input{
+    display:flex;
+    border-top:1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.chat-input input{
+    flex:1;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:rgb(255, 255, 255);
+}
+
+.chat-input input::placeholder {
+  color: #ffffff;
+}
+
+.chat-input button{
+    padding:10px;
+    border:none;
+    background: gray;
+    cursor:pointer;
+}

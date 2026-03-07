@@ -321,6 +321,89 @@ Reconnecting people with their belongings</span>
       </section>
     </main>
 
+    <!-- chatBot  -->
+
+    <!-- Floating Button -->
+<div class="chat-toggle" onclick="toggleChat()">
+<i class="fa fa-comments"></i>
+</div>
+
+<!-- Chatbox -->
+<div class="chat-container" id="chatContainer">
+    <div class="chat-header">Lost & Found Assistant 🤖</div>
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="quick-buttons">
+        <button onclick="quickAsk('How to report lost item?')">Report Lost</button>
+        <button onclick="quickAsk('How to claim item?')">Claim</button>
+        <button onclick="quickAsk('Check status')">Status</button>
+        <button onclick="quickAsk('Login help')">Login</button>
+        <button onclick="quickAsk('contact Admin')">Contact Admin</button>
+        <button onclick="quickAsk('How to report found item?')">Report found</button>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask something...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+function toggleChat(){
+    let chat=document.getElementById("chatContainer");
+    chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+}
+
+function quickAsk(text){
+    document.getElementById("userInput").value=text;
+    sendMessage();
+}
+
+function sendMessage(){
+    let input=document.getElementById("userInput");
+    let message=input.value.toLowerCase();
+    let chatBox=document.getElementById("chatBox");
+
+    if(message.trim()==="") return;
+
+    chatBox.innerHTML+=`<div class="message user">${message}</div>`;
+    let reply=getBotReply(message);
+
+    setTimeout(()=>{
+        chatBox.innerHTML+=`<div class="message bot">${reply}</div>`;
+        chatBox.scrollTop=chatBox.scrollHeight;
+    },400);
+
+    input.value="";
+}
+
+function getBotReply(message){
+
+    if(message.includes("lost"))
+        return "Go to Lost section → Fill item details → Submit report.";
+    else if(message.includes("found"))
+        return "Open Found section → Enter item info → Submit.";
+    else if(message.includes("claim"))
+        return "Contact admin with proof (ID/pictures/details) to claim item.";
+    else if(message.includes("status"))
+        return "Check status in your login Email.";
+    else if(message.includes("login"))
+        return "Login using your college credentials.";
+    else if(message.includes("hello") || message.includes("hi"))
+        return "Hello 👋 I am your Lost & Found Assistant. How can I help you today?";
+    else if(message.includes("contact admin") || message.includes("admin"))
+        return "to contact with admin : message on this Email : (AssetRecovery404@gmail.com)";
+    else
+        return "Please ask about lost, found, claim, login or status.";
+}
+
+/* Auto Welcome */
+window.onload=function(){
+    document.getElementById("chatBox").innerHTML=
+    `<div class="message bot">Welcome 👋 I am here to help you with Lost & Found system. Click quick buttons or type your question.</div>`;
+}
+</script>
+
 
 
     <footer class="footer">
