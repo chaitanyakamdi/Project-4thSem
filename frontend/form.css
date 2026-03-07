@@ -177,7 +177,7 @@
 .terms input[type="checkbox"] {
     width: 16px;
     height: 16px;
-    accent-color: brown;
+    accent-color: gray;
     cursor: pointer;
     flex-shrink: 0;
 }
@@ -188,7 +188,7 @@
     padding: 14px;
     border: none;
     border-radius: 4px;
-    background: linear-gradient(135deg, brown 0%, #c33764 100%);
+    background: gray;
     color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
@@ -196,13 +196,13 @@
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-    box-shadow: 0 4px 16px rgba(195, 55, 100, 0.35);
+    box-shadow: 0 4px 16px rgba(121, 121, 121, 0.35);
 }
 
 .signup-form button:hover {
     opacity: 0.93;
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(195, 55, 100, 0.45);
+    box-shadow: 0 8px 24px rgba(126, 126, 126, 0.45);
 }
 
 .signup-form button:active {
@@ -220,14 +220,15 @@
 
 .switch a {
     text-decoration: none;
-    color: #c33764;
+    color: brown;
     font-weight: 600;
     margin-left: 4px;
     transition: opacity 0.2s;
 }
 
 .switch a:hover {
-    opacity: 0.75;
+    opacity: 1;
+    color: black;
 }
 
 /* ── Footer Watermark ── */
